@@ -1,0 +1,7 @@
+{
+  "name": "São Pérolas",
+  "short_name": "São Pérolas",
+  "start_url": "/",
+  "display": "standalone",
+  "gcm_sender_id": "519659307484"
+}

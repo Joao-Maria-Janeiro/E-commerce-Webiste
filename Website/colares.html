@@ -10,7 +10,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
   <title>São Pérolas | Colares</title>
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,12 +22,6 @@
 <meta name="description" content="É uma marca registada que trabalha com as tradicionais pérolas com uma abordagem contemporânea !!">
 <meta name="keywords" content="Colares, perolas, sao perolas, colares, são pérolas, São pérolas, São Pérolas">
 <meta name="author" content="João Maria Janeiro">
-=======
-  <title>Testing Bootstrap</title>
-
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
->>>>>>> e256dcbc46faf00cbcd468cb476491254896cad6
   <style>
 
   .pull-left img{
@@ -105,6 +98,8 @@ text-align: center;
 
     box-shadow: none;
 
+    width: 100%;
+    overflow: hidden;
 }
 
 .row img{
@@ -132,7 +127,14 @@ form input{
 }
 
 
-
+@media screen and (min-width: 960px) {
+  .thumbnail img{
+    -webkit-transition: all 0.5s ease;
+  }
+  .thumbnail img:hover{
+    transform: scale(1.8);
+  }
+}
   </style>
 
       <link href="landing-page.min.css" rel="stylesheet">
@@ -145,6 +147,7 @@ form input{
 
 
 
+
 </head>
 
 <body>
@@ -153,7 +156,7 @@ form input{
 
   <div class="container">
 
-    <!-- .navbar-fixed-top, or .navbar-fixed-bottom can be added to keep the nav bar fixed on the screen -->
+
 
     <nav class="navbar-default navbar-fixed-top">
 
@@ -161,25 +164,24 @@ form input{
 
 
 
-        <!-- Brand and toggle get grouped for better mobile display -->
 
         <div class="navbar-header">
 
 
 
-          <!-- Button that toggles the navbar on and off on small screens -->
+
 
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 
 
 
-          <!-- Hides information from screen readers -->
+
 
             <span class="sr-only"></span>
 
 
 
-           <!-- Draws 3 bars in navbar button when in small mode -->
+
 
             <span class="icon-bar"></span>
 
@@ -191,7 +193,6 @@ form input{
 
 
 
-          <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
 
           <a class="pull-left" href="index.html"><img src="favicon.png"></a>
 
@@ -199,7 +200,7 @@ form input{
 
 
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -223,11 +224,7 @@ form input{
 
             </li>
 
-<<<<<<< HEAD
             <li><a href="contactos.html" data-toggle="tooltip" data-placement="left" title="">Contactos</a></li>
-=======
-            <li><a href="contactos.html" data-toggle="tooltip" data-placement="left" title="Contactos motherfuckkkkkkaaaaa">Contactos</a></li>
->>>>>>> e256dcbc46faf00cbcd468cb476491254896cad6
 
             <li><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
 
@@ -247,22 +244,18 @@ form input{
 
           </ul>
 
-        </div><!-- /.navbar-collapse -->
+        </div>
 
-      </div><!-- /.container-fluid -->
+      </div>
 
     </nav>
 
     </div>
 
-<<<<<<< HEAD
-=======
-    <br>
-
->>>>>>> e256dcbc46faf00cbcd468cb476491254896cad6
     <br>
 
     <br>
+
 
 <div class="container">
 
@@ -274,27 +267,6 @@ form input{
 
       <a href="colar2.html"><img src="5.jpg" width="200" ></img></a>
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-<div class="container">
-
-  <div class="row">
-
-    <div class="col-md-3">
-
-      <div class="thumbnail">
-
-      <a href="colar2.html"><img src="cenas.jpg" width="200" ></img></a>
-
->>>>>>> e256dcbc46faf00cbcd468cb476491254896cad6
     </div>
 
   </div>
@@ -381,7 +353,6 @@ form input{
 
 </div>
 
-
 <footer><center>
 
   <a href="https://www.facebook.com/saoperolas/"><img src="fblogo_1.png" width="20" height="20"></a>
@@ -391,13 +362,6 @@ form input{
   <p>São pérolas <sup>&reg;</sup>, desde 2011</p>
 
 </footer></center>
-
-
-
-
-
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
