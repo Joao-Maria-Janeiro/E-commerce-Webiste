@@ -32,7 +32,7 @@
 }
 .center-block {
   height: 500px;
-  background: url("pearls-wallpaper-1920x1080.png") no-repeat center;
+  background: url("./img/pearls-wallpaper-1920x1080.png") no-repeat center;
 }
 
 .center-block img{
@@ -61,10 +61,56 @@ form input{
 footer{
   margin-top: 10px;
 }
+.dropdown-submenu {
+    position: relative;
+}
 
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
   </style>
       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-      
+
 </head>
 <body>
 
@@ -90,17 +136,24 @@ footer{
           </button>
 
           <!-- You'll have to add padding in your image on the top and right of a few pixels (CSS Styling will break the navbar) -->
-          <a class="pull-left" href="index.html"><img src="favicon.png"></a>
+          <a class="pull-left" href="index.html"><img src="./img/favicon.png"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="index.html">Home<span class="sr-only"></span></a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="colares.html">Colares</a></li>
+                <li class="dropdown-submenu">
+               <a tabindex="-1" href="#">Colares</a>
+               <ul class="dropdown-menu">
+                 <li><a tabindex="-1" href="colares.html">Compridos</a></li>
+                 <li><a href="#">Curtos</a></li>
+                 <li><a href="#">Fios</a></li>
+               </ul>
+             </li>
                 <li><a href="pulseiras.html">Pulseiras</a></li>
                 <li><a href="brincos.html">Brincos</a></li>
               </ul>
@@ -110,7 +163,7 @@ footer{
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
-<input type="image" src="malinha.png" border="0" width="15" height="20" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<input type="image" src="./img/malinha.png" border="0" width="15" height="20" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 </li>
@@ -123,7 +176,7 @@ footer{
     <br>
 
 <div class="center-block">
-  <img src="logo.png" class="img-responsive"></img>
+  <img src="./img/logo.png" class="img-responsive"></img>
   <a href="https://calendar.google.com/calendar/embed?src=saoperolas1%40gmail.com&ctz=America%2FNew_York"><button type="button" class="btn btn-regular">Eventos</button></a>
 </div>
 
@@ -132,17 +185,17 @@ footer{
   <h2> Os nossos produtos</h2>
   <div class="row">
     <div class="col-sm-4">
-      <a href="colares.html"><img src="cenas4.jpg" class="img-circle" id="icon"></a>
+      <a href="colares.html"><img src="./img/cenas4.jpg" class="img-circle" id="icon"></a>
       <h4>Colares</h4>
       <p>Não há colares bons e baratos como estes!</p>
     </div>
     <div class="col-sm-4">
-      <a href="pulseiras.html"><img src="pulseira.jpg" class="img-circle" id="icon"></a>
+      <a href="pulseiras.html"><img src="./img/pulseira1/1.jpg" class="img-circle" id="icon"></a>
       <h4>Pulseiras</h4>
       <p>Estão quase ao nível dos colares, comprem!</p>
     </div>
     <div class="col-sm-4">
-      <a href="brincos.html"><img src="brincos.jpg" class="img-circle" id="icon"></a>
+      <a href="brincos.html"><img src="./img/brincos.jpg" class="img-circle" id="icon"></a>
       <h4>Brincos</h4>
       <p>Não é bem a minha praia mas também dou uma mão nisto</p>
     </div>
@@ -151,9 +204,9 @@ footer{
   </div>
 
   <footer><center>
-    <a href="https://www.facebook.com/saoperolas/"><img src="fblogo_1.png" width="20" height="20"></a>
-    <a href="https://www.instagram.com/sao.perolas/?hl=pt"><img src="instalogo_1.png" width="20" height="20"></a>
-    <p>São pérolas <sup>&reg;</sup>, desde 2011</p>
+    <a href="https://www.facebook.com/saoperolas/"><img src="./img/fblogo_1.png" width="20" height="20"></a>
+    <a href="https://www.instagram.com/sao.perolas/?hl=pt"><img src="./img/instalogo_1.png" width="20" height="20"></a>
+    <p>São Pérolas <sup>&reg;</sup>, desde 2011</p>
   </footer></center>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
